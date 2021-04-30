@@ -1,0 +1,48 @@
+name: DummyTwitterProfile
+# configs:
+#     Debug: debug
+#     Release: release
+# configFiles:
+#   Debug: configs/Debug.xcconfig
+#   Release: configs/Release.xcconfig
+options:
+  bundleIdPrefix: com.sakiyamaK
+  deploymentTarget:
+    iOS: 13.0
+configs:
+  Debug: debug
+  Release: release
+schemes:
+  DummyTwitterProfile:
+    build:
+      targets:
+        DummyTwitterProfile: all
+    run:
+      config: Debug
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release
+
+targets:
+  DummyTwitterProfile:
+    platform: iOS
+    type: application
+    sources:
+      - path: DummyTwitterProfile/
+    # configFiles:
+    #     Debug: configs/Debug.xcconfig
+    #     Release: configs/Release.xcconfig
+    preBuildScripts:
+        - path: /bin/sh
+          name: Run Script(Swiftformat)
+          script: |
+            if which mint >/dev/null; then
+              git diff --name-only | grep .swift | while read filename; do
+                mint run swiftformat "$filename" --swiftversion 5
+              done
+            else
+              echo "warning: Mintがインストールされていません。こちらからダウンロードしてください https://github.com/yonaskolb/Mint"
+            fi

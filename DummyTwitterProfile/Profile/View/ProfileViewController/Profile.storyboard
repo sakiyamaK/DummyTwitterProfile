@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wOa-SI-twv">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile View Controller-->
+        <scene sceneID="ctg-4H-50b">
+            <objects>
+                <viewController id="wOa-SI-twv" customClass="ProfileViewController" customModule="DummyTwitterProfile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UiU-xH-lu7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nLs-kX-lfK">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3K-4E-r46" userLabel="TabScrollView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4TW-sH-aAW">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="4TW-sH-aAW" firstAttribute="width" relation="greaterThanOrEqual" secondItem="yau-9z-W8Q" secondAttribute="width" id="43M-p8-lGo"/>
+                                            <constraint firstItem="4TW-sH-aAW" firstAttribute="width" secondItem="yau-9z-W8Q" secondAttribute="width" priority="1" id="RHY-5Y-QbZ"/>
+                                            <constraint firstItem="4TW-sH-aAW" firstAttribute="top" secondItem="RFh-NL-n14" secondAttribute="top" id="WYt-aG-IFh"/>
+                                            <constraint firstItem="4TW-sH-aAW" firstAttribute="bottom" secondItem="RFh-NL-n14" secondAttribute="bottom" id="fEY-eA-Wxp"/>
+                                            <constraint firstItem="4TW-sH-aAW" firstAttribute="leading" secondItem="RFh-NL-n14" secondAttribute="leading" id="j1J-Sp-u4l"/>
+                                            <constraint firstItem="4TW-sH-aAW" firstAttribute="trailing" secondItem="RFh-NL-n14" secondAttribute="trailing" id="rIS-A4-hEF"/>
+                                            <constraint firstItem="4TW-sH-aAW" firstAttribute="height" secondItem="yau-9z-W8Q" secondAttribute="height" id="zi9-Vq-dcc"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="RFh-NL-n14"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="yau-9z-W8Q"/>
+                                    </scrollView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="U3K-4E-r46" firstAttribute="width" secondItem="dGK-Np-Iae" secondAttribute="width" id="2oj-81-XeZ"/>
+                                    <constraint firstItem="LJe-OV-DiC" firstAttribute="leading" secondItem="U3K-4E-r46" secondAttribute="leading" id="4bm-fd-Fyj"/>
+                                    <constraint firstItem="U3K-4E-r46" firstAttribute="bottom" secondItem="LJe-OV-DiC" secondAttribute="bottom" id="DCQ-Le-fXb"/>
+                                    <constraint firstItem="LJe-OV-DiC" firstAttribute="top" secondItem="U3K-4E-r46" secondAttribute="top" id="OTK-GW-22y"/>
+                                    <constraint firstItem="U3K-4E-r46" firstAttribute="height" secondItem="dGK-Np-Iae" secondAttribute="height" id="h6E-sG-epp"/>
+                                    <constraint firstItem="U3K-4E-r46" firstAttribute="trailing" secondItem="LJe-OV-DiC" secondAttribute="trailing" id="xdJ-Ox-OVt"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="LJe-OV-DiC"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="dGK-Np-Iae"/>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Sv-oO-beU" userLabel="HeaderContainerView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="1" constant="128" id="Wt3-wl-cCc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Djs-L7-zNm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9Sv-oO-beU" firstAttribute="top" secondItem="Djs-L7-zNm" secondAttribute="top" id="8ax-e0-MdS"/>
+                            <constraint firstItem="Djs-L7-zNm" firstAttribute="trailing" secondItem="9Sv-oO-beU" secondAttribute="trailing" id="GKz-C7-B7H"/>
+                            <constraint firstItem="nLs-kX-lfK" firstAttribute="top" secondItem="Djs-L7-zNm" secondAttribute="top" id="LhJ-l1-ucL"/>
+                            <constraint firstItem="9Sv-oO-beU" firstAttribute="leading" secondItem="Djs-L7-zNm" secondAttribute="leading" id="O2C-XI-Ro6"/>
+                            <constraint firstItem="Djs-L7-zNm" firstAttribute="trailing" secondItem="nLs-kX-lfK" secondAttribute="trailing" id="Tj1-79-2VE"/>
+                            <constraint firstItem="Djs-L7-zNm" firstAttribute="bottom" secondItem="nLs-kX-lfK" secondAttribute="bottom" id="oVk-LE-0v8"/>
+                            <constraint firstItem="nLs-kX-lfK" firstAttribute="leading" secondItem="Djs-L7-zNm" secondAttribute="leading" id="zte-FC-zhA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="headerContainerView" destination="9Sv-oO-beU" id="Ndh-fd-DLa"/>
+                        <outlet property="pageStackView" destination="4TW-sH-aAW" id="cci-W3-iYM"/>
+                        <outlet property="tabScrollView" destination="U3K-4E-r46" id="U4b-59-syt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v9V-zt-kb9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13" y="179"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
