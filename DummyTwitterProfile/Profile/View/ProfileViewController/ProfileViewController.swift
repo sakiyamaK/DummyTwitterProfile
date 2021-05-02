@@ -13,9 +13,16 @@ protocol ProfileView: AnyObject {
 
 final class ProfileViewController: UIViewController {
 
+  @IBOutlet weak var bigUserIconWidthConst: NSLayoutConstraint!
+  @IBOutlet weak var bigUserIcon: UIImageView! {
+    didSet {
+      bigUserIcon.layer.cornerRadius = 32
+      bigUserIcon.clipsToBounds = true
+    }
+  }
   @IBOutlet private weak var userIcon: UIImageView! {
     didSet {
-      userIcon.layer.cornerRadius = 15
+      userIcon.layer.cornerRadius = 18
       userIcon.clipsToBounds = true
     }
   }
@@ -70,8 +77,9 @@ extension ProfileViewController: ProfileView {
 
         let button = UIButton()
         button.setTitle(tweetType.keyName, for: .normal)
-        button.setTitleColor(.systemBlue, for: .normal)
+        button.setTitleColor(.systemGray, for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 14)
+        button.titleLabel?.textAlignment = .center
         self.tabButtonStackView.addArrangedSubview(button)
 
         let collectionView: UICollectionView = .init(frame: .zero, collectionViewLayout: self.layout)
@@ -98,6 +106,14 @@ extension ProfileViewController: ProfileView {
 }
 extension ProfileViewController: UICollectionViewDelegate {
   func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    if scrollView == rootScrollView {
+      let size: CGFloat = 64 - (64.0 - 36.0) * fabs(min(scrollView.contentOffset.y, 40) / 40.0)
+      bigUserIconWidthConst.constant = size
+      bigUserIcon.layer.cornerRadius = size/2
+      bigUserIcon.layoutIfNeeded()
+
+      bigUserIcon.isHidden = scrollView.contentOffset.y >= 40
+    }
   }
 }
 
