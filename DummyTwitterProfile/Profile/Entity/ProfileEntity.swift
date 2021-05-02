@@ -9,7 +9,15 @@ import Foundation
 
 struct UserEntity: Codable {
   var headerImageURLStr: String?
+  var headerImageURL: URL? {
+    guard let str = headerImageURLStr else { return nil }
+    return URL(string: str)
+  }
   var iconURLStr: String?
+  var iconURL: URL? {
+    guard let str = iconURLStr else { return nil }
+    return URL(string: str)
+  }
   var displayNameStr: String?
   var userNameStr: String?
   var description: String?

@@ -9,6 +9,10 @@ options:
   bundleIdPrefix: com.sakiyamaK
   deploymentTarget:
     iOS: 13.0
+packages:
+  Kingfisher:
+      url: https://github.com/onevcat/Kingfisher
+      from: 6.3.0
 configs:
   Debug: debug
   Release: release
@@ -25,13 +29,14 @@ schemes:
       config: Debug
     archive:
       config: Release
-
 targets:
   DummyTwitterProfile:
     platform: iOS
     type: application
     sources:
       - path: DummyTwitterProfile/
+    dependencies:
+        - package: Kingfisher
     # configFiles:
     #     Debug: configs/Debug.xcconfig
     #     Release: configs/Release.xcconfig

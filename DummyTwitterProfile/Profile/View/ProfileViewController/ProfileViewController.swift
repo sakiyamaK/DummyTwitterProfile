@@ -13,27 +13,17 @@ protocol ProfileView: AnyObject {
 
 final class ProfileViewController: UIViewController {
 
-  private var nowHeightConst: NSLayoutConstraint!
-  let defHeight: CGFloat = 360
-  private var headerView: ProfileHeaderView!
-  @IBOutlet private weak var headerContainerView: UIView! {
+  @IBOutlet private weak var userIcon: UIImageView! {
     didSet {
-      headerView = UINib(nibName: "ProfileHeaderView", bundle: nil).instantiate(withOwner: self, options: [:]).first as! ProfileHeaderView
-      headerContainerView.addSubview(headerView)
-      headerView.edgesEqualToSpuerView()
-      nowHeightConst = headerView.heightAnchor.constraint(equalToConstant: defHeight)
-      nowHeightConst.priority = .defaultLow
-      headerView.activate([
-        headerView.heightAnchor.constraint(greaterThanOrEqualToConstant: 80),
-        headerView.heightAnchor.constraint(lessThanOrEqualToConstant: defHeight),
-        nowHeightConst
-      ])
+      userIcon.layer.cornerRadius = 15
+      userIcon.clipsToBounds = true
     }
   }
-
+  @IBOutlet private weak var rootScrollView: UIScrollView!
   @IBOutlet private weak var tabScrollView: UIScrollView!
   @IBOutlet private weak var pageStackView: UIStackView!
-  
+  @IBOutlet private weak var tabButtonStackView: UIStackView!
+
   private var presenter: ProfilePresentation!
   func inject(presenter: ProfilePresentation) {
     self.presenter = presenter
@@ -58,7 +48,7 @@ final class ProfileViewController: UIViewController {
     group.contentInsets = .init(top: 10, leading: 0, bottom: 10, trailing: 0)
 
     let section = NSCollectionLayoutSection(group: group)
-    section.contentInsets = .init(top: defHeight, leading: 10, bottom: 10, trailing: 10)
+    section.contentInsets = .init(top: 10, leading: 10, bottom: 10, trailing: 10)
 
     let layout = UICollectionViewCompositionalLayout(section: section)
 
@@ -68,9 +58,6 @@ final class ProfileViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     self.view.backgroundColor = .white
-
-    headerView.addConstraint(view: self.view)
-
     presenter.viewDidLoad()
   }
 }
@@ -80,6 +67,12 @@ extension ProfileViewController: ProfileView {
     DispatchQueue.main.async {
 
       tweetsTuples.forEach { (tweetType, tweets) in
+
+        let button = UIButton()
+        button.setTitle(tweetType.keyName, for: .normal)
+        button.setTitleColor(.systemBlue, for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 14)
+        self.tabButtonStackView.addArrangedSubview(button)
 
         let collectionView: UICollectionView = .init(frame: .zero, collectionViewLayout: self.layout)
         collectionView.backgroundColor = .white
@@ -105,11 +98,7 @@ extension ProfileViewController: ProfileView {
 }
 extension ProfileViewController: UICollectionViewDelegate {
   func scrollViewDidScroll(_ scrollView: UIScrollView) {
-    let moveAmount = scrollView.contentOffset.y
-    nowHeightConst.constant = defHeight - moveAmount
-    self.view.layoutIfNeeded()
   }
-
 }
 
 extension ProfileViewController: UICollectionViewDataSource {

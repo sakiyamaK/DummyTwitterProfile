@@ -9,6 +9,7 @@ import Foundation
 
 protocol ProfilePresentation: AnyObject {
   func viewDidLoad()
+  func viewWillLayoutSubviews()
   var tweetsTuples: [(TweetType, [TweetEntity])] { get }
 }
 
@@ -31,6 +32,8 @@ final class ProfilePresenter {
 extension ProfilePresenter: ProfilePresentation {
   var tweetsTuples: [(TweetType, [TweetEntity])] { interactor.tweetsTuples }
 
+  func viewWillLayoutSubviews() {}
+  
   func viewDidLoad() {
     let group = DispatchGroup()
 
@@ -59,7 +62,7 @@ extension ProfilePresenter: ProfilePresentation {
       case .success(let responseTweetsTuples):
         tweetsTuples = responseTweetsTuples
         group.leave()
-    }
+      }
     })
 
     group.notify(queue: DispatchQueue.global(qos: .default)) { [unowned self] in

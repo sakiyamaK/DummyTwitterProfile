@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,50 +11,56 @@
 		088396EB68336ADFB7AABC48 /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4540A9442E7C095BDC5E320 /* ProfileRouter.swift */; };
 		3D8A6BFCC9F6651A24BDA266 /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08321FAAC56CADC2E716832 /* ProfileInteractor.swift */; };
 		435E613EA68C1F0609B8B246 /* ProfileEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C52C81C184E6DE938DAE175 /* ProfileEntity.swift */; };
-		43F8A17A8EED964B9FEFE1DC /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9A7458ADE378B67EA29F34D /* Profile.storyboard */; };
+		4A92147A408AFE052442633E /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AFE5036851131F9808B57ED /* Profile.storyboard */; };
 		53873CE16D797B93C787EE21 /* TweetEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71960239A1333E6961A0EE8B /* TweetEntity.swift */; };
 		5C5600E50EC09A485C49D1F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF14424D1B96B62CDA79631 /* LaunchScreen.storyboard */; };
 		602B916920D290EFDE0607D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63D40978C60224B249ED4F1 /* AppDelegate.swift */; };
 		61136D3B2C6A78A73ADD4032 /* AppPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2680BA7895E804C840096D /* AppPresenter.swift */; };
 		7DDE021F24FC4DA4896F62AB /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CB4E5BB6ED1664778FA452 /* UIViewController+.swift */; };
 		8CC25F2B21B267666DA5C5D4 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB914A047A96BD98A827BF9 /* ProfilePresenter.swift */; };
-		B66ED3D8263AA64E00E118D8 /* ProfileTabButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = B66ED3D7263AA64E00E118D8 /* ProfileTabButton.xib */; };
-		B66ED3DA263AA65B00E118D8 /* ProfileTabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66ED3D9263AA65B00E118D8 /* ProfileTabButton.swift */; };
-		B66ED3DF263AA83100E118D8 /* ProfileHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B66ED3DE263AA83100E118D8 /* ProfileHeaderView.xib */; };
-		B66ED3E1263AA83800E118D8 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66ED3E0263AA83800E118D8 /* ProfileHeaderView.swift */; };
-		B66ED3E3263ABC7300E118D8 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66ED3E2263ABC7300E118D8 /* UIView+.swift */; };
-		B66ED3E5263BF63B00E118D8 /* Codable+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66ED3E4263BF63B00E118D8 /* Codable+.swift */; };
+		A7D4E64AE37F0FEF90A0AFB5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A418F25C749A0C3BC7F0539 /* ProfileViewController.swift */; };
+		B69A26BF263C64950046D7ED /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69A26BE263C64950046D7ED /* Log.swift */; };
+		CDADF159C7BF094772A30A41 /* Codable+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4DC2B64F5864F4F723B422 /* Codable+.swift */; };
 		DEE6D68ED8A2272D72A91DDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86D1B091C3D954E3C8C782ED /* Assets.xcassets */; };
+		DF2C5968ABF9347883DA4047 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C68405DC6497D6B874781612 /* Kingfisher */; };
 		E135D367004C17CEF0036538 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A70564C4A2BFB9975A3894 /* AppRouter.swift */; };
-		E78F925EE0D1391368D16DF2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A673B776B098A714A543B91 /* ProfileViewController.swift */; };
+		FA2CB64370736541B94996D9 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF483B4A9F44C7FC08190C0 /* UIView+.swift */; };
 		FC6129E88DA51B093448D16C /* AppEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300A411BA7CDD744016B5717 /* AppEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C52C81C184E6DE938DAE175 /* ProfileEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEntity.swift; sourceTree = "<group>"; };
 		11CB4E5BB6ED1664778FA452 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		1A418F25C749A0C3BC7F0539 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		300A411BA7CDD744016B5717 /* AppEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntity.swift; sourceTree = "<group>"; };
-		3A673B776B098A714A543B91 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		58A70564C4A2BFB9975A3894 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		5AFE5036851131F9808B57ED /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		5D4DC2B64F5864F4F723B422 /* Codable+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+.swift"; sourceTree = "<group>"; };
 		5FF69AE37704E99B20CD6F46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		71960239A1333E6961A0EE8B /* TweetEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetEntity.swift; sourceTree = "<group>"; };
 		7A2680BA7895E804C840096D /* AppPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPresenter.swift; sourceTree = "<group>"; };
 		86D1B091C3D954E3C8C782ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F15797875094F2CCBF42323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B66ED3D7263AA64E00E118D8 /* ProfileTabButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTabButton.xib; sourceTree = "<group>"; };
-		B66ED3D9263AA65B00E118D8 /* ProfileTabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabButton.swift; sourceTree = "<group>"; };
-		B66ED3DE263AA83100E118D8 /* ProfileHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileHeaderView.xib; sourceTree = "<group>"; };
-		B66ED3E0263AA83800E118D8 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
-		B66ED3E2263ABC7300E118D8 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
-		B66ED3E4263BF63B00E118D8 /* Codable+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+.swift"; sourceTree = "<group>"; };
+		B69A26BE263C64950046D7ED /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		C08321FAAC56CADC2E716832 /* ProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
+		CFF483B4A9F44C7FC08190C0 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		D145CBB312F5992445FFCE57 /* DummyTwitterProfile.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = DummyTwitterProfile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4540A9442E7C095BDC5E320 /* ProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
 		DEB914A047A96BD98A827BF9 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 		E63D40978C60224B249ED4F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E9A7458ADE378B67EA29F34D /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		FC3FA8A5363510ACDAF17ADA /* AppInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F0D9A03962BB8C825AF5306 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF2C5968ABF9347883DA4047 /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		15C9713389881A363A98C1F4 /* App */ = {
@@ -66,6 +72,15 @@
 				9E58D0944673B50136E87CFA /* Router */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		1EB4D412EAAE8D8C6D5F8368 /* ProfileViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5AFE5036851131F9808B57ED /* Profile.storyboard */,
+				1A418F25C749A0C3BC7F0539 /* ProfileViewController.swift */,
+			);
+			path = ProfileViewController;
 			sourceTree = "<group>";
 		};
 		22699901CA6B4B0CAE48407D /* Presenter */ = {
@@ -145,42 +160,24 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		B66ED3DB263AA72C00E118D8 /* ProfileHeaderView */ = {
+		B69A26BD263C64820046D7ED /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				B66ED3DE263AA83100E118D8 /* ProfileHeaderView.xib */,
-				B66ED3E0263AA83800E118D8 /* ProfileHeaderView.swift */,
+				B69A26BE263C64950046D7ED /* Log.swift */,
 			);
-			path = ProfileHeaderView;
-			sourceTree = "<group>";
-		};
-		B66ED3DC263AA73600E118D8 /* ProfileViewController */ = {
-			isa = PBXGroup;
-			children = (
-				E9A7458ADE378B67EA29F34D /* Profile.storyboard */,
-				3A673B776B098A714A543B91 /* ProfileViewController.swift */,
-			);
-			path = ProfileViewController;
-			sourceTree = "<group>";
-		};
-		B66ED3DD263AA74400E118D8 /* ProfileTabButton */ = {
-			isa = PBXGroup;
-			children = (
-				B66ED3D7263AA64E00E118D8 /* ProfileTabButton.xib */,
-				B66ED3D9263AA65B00E118D8 /* ProfileTabButton.swift */,
-			);
-			path = ProfileTabButton;
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		BE737AC8FF64D11DF50F64C2 /* DummyTwitterProfile */ = {
 			isa = PBXGroup;
 			children = (
+				15C9713389881A363A98C1F4 /* App */,
 				E63D40978C60224B249ED4F1 /* AppDelegate.swift */,
 				86D1B091C3D954E3C8C782ED /* Assets.xcassets */,
+				F032FFB47ED0D29641E03853 /* Extension */,
+				B69A26BD263C64820046D7ED /* Helper */,
 				5FF69AE37704E99B20CD6F46 /* Info.plist */,
 				8BF14424D1B96B62CDA79631 /* LaunchScreen.storyboard */,
-				15C9713389881A363A98C1F4 /* App */,
-				F032FFB47ED0D29641E03853 /* Extension */,
 				9D69A769A8A2434BEF863CC2 /* Profile */,
 			);
 			path = DummyTwitterProfile;
@@ -205,9 +202,9 @@
 		F032FFB47ED0D29641E03853 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				5D4DC2B64F5864F4F723B422 /* Codable+.swift */,
+				CFF483B4A9F44C7FC08190C0 /* UIView+.swift */,
 				11CB4E5BB6ED1664778FA452 /* UIViewController+.swift */,
-				B66ED3E2263ABC7300E118D8 /* UIView+.swift */,
-				B66ED3E4263BF63B00E118D8 /* Codable+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -215,9 +212,7 @@
 		F942D6A8A347EE373CA3C3B9 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B66ED3DD263AA74400E118D8 /* ProfileTabButton */,
-				B66ED3DC263AA73600E118D8 /* ProfileViewController */,
-				B66ED3DB263AA72C00E118D8 /* ProfileHeaderView */,
+				1EB4D412EAAE8D8C6D5F8368 /* ProfileViewController */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -229,15 +224,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 858FDBF0072FAE8E4DA25066 /* Build configuration list for PBXNativeTarget "DummyTwitterProfile" */;
 			buildPhases = (
-				21DD9247860A01072CDEB94E /* Run Script(Swiftformat) */,
 				C10002CFB1F9F53635F0B192 /* Sources */,
 				A9ED5CFA4FC1C651CE515550 /* Resources */,
+				1F0D9A03962BB8C825AF5306 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = DummyTwitterProfile;
+			packageProductDependencies = (
+				C68405DC6497D6B874781612 /* Kingfisher */,
+			);
 			productName = DummyTwitterProfile;
 			productReference = D145CBB312F5992445FFCE57 /* DummyTwitterProfile.app */;
 			productType = "com.apple.product-type.application";
@@ -259,6 +257,9 @@
 				en,
 			);
 			mainGroup = D9CFC2F6D04244CBEE1268D5;
+			packageReferences = (
+				BB13D0A6D14EDD0A5261AF13 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -274,34 +275,11 @@
 			files = (
 				DEE6D68ED8A2272D72A91DDE /* Assets.xcassets in Resources */,
 				5C5600E50EC09A485C49D1F2 /* LaunchScreen.storyboard in Resources */,
-				B66ED3D8263AA64E00E118D8 /* ProfileTabButton.xib in Resources */,
-				43F8A17A8EED964B9FEFE1DC /* Profile.storyboard in Resources */,
-				B66ED3DF263AA83100E118D8 /* ProfileHeaderView.xib in Resources */,
+				4A92147A408AFE052442633E /* Profile.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		21DD9247860A01072CDEB94E /* Run Script(Swiftformat) */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script(Swiftformat)";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which mint >/dev/null; then\n  git diff --name-only | grep .swift | while read filename; do\n    mint run swiftformat \"$filename\" --swiftversion 5\n  done\nelse\n  echo \"warning: Mintがインストールされていません。こちらからダウンロードしてください https://github.com/yonaskolb/Mint\"\nfi\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C10002CFB1F9F53635F0B192 /* Sources */ = {
@@ -313,16 +291,15 @@
 				023E482D4D8281263FAF5AF8 /* AppInteractor.swift in Sources */,
 				61136D3B2C6A78A73ADD4032 /* AppPresenter.swift in Sources */,
 				E135D367004C17CEF0036538 /* AppRouter.swift in Sources */,
+				CDADF159C7BF094772A30A41 /* Codable+.swift in Sources */,
 				435E613EA68C1F0609B8B246 /* ProfileEntity.swift in Sources */,
-				B66ED3DA263AA65B00E118D8 /* ProfileTabButton.swift in Sources */,
+				B69A26BF263C64950046D7ED /* Log.swift in Sources */,
 				3D8A6BFCC9F6651A24BDA266 /* ProfileInteractor.swift in Sources */,
 				8CC25F2B21B267666DA5C5D4 /* ProfilePresenter.swift in Sources */,
-				B66ED3E5263BF63B00E118D8 /* Codable+.swift in Sources */,
-				B66ED3E3263ABC7300E118D8 /* UIView+.swift in Sources */,
 				088396EB68336ADFB7AABC48 /* ProfileRouter.swift in Sources */,
-				E78F925EE0D1391368D16DF2 /* ProfileViewController.swift in Sources */,
-				B66ED3E1263AA83800E118D8 /* ProfileHeaderView.swift in Sources */,
+				A7D4E64AE37F0FEF90A0AFB5 /* ProfileViewController.swift in Sources */,
 				53873CE16D797B93C787EE21 /* TweetEntity.swift in Sources */,
+				FA2CB64370736541B94996D9 /* UIView+.swift in Sources */,
 				7DDE021F24FC4DA4896F62AB /* UIViewController+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +491,25 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BB13D0A6D14EDD0A5261AF13 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C68405DC6497D6B874781612 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB13D0A6D14EDD0A5261AF13 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 37A3C9760E3BBF6B367ED17A /* Project object */;
 }
