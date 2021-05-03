@@ -11,6 +11,7 @@ protocol ProfilePresentation: AnyObject {
   func viewDidLoad()
   func viewWillLayoutSubviews()
   var tweetsTuples: [(TweetType, [TweetEntity])] { get }
+  func scrollChanged(rootOffsetY: Float, collectionOffsetY: Float)
 }
 
 final class ProfilePresenter {
@@ -72,5 +73,11 @@ extension ProfilePresenter: ProfilePresentation {
         self.view?.updateView(user: user, tweetsTuples: tweetsTuples)
       }
     }
+  }
+
+  func scrollChanged(rootOffsetY: Float, collectionOffsetY: Float) {
+    self.view?.updateScrollEnable(root: true, collection: true)
+//    DLog("\(rootOffsetY), \(collectionOffsetY)")
+//    self.view?.updateScrollEnable(root: rootOffsetY < 300, collection: rootOffsetY > 300)
   }
 }

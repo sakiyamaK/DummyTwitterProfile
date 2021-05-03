@@ -2,3 +2,8 @@ VIPER:
   Target: DummyTwitterProfile
   TemplateDirectoryPath: ./templates/PuiTemplate/ios/VIPER
   GenerateRootPath: ./DummyTwitterProfile
+
+MVC_COLLECTION:
+  Target: DummyTwitterProfile
+  TemplateDirectoryPath: ./templates/PuiTemplate/ios/MVC_COLLECTION
+  GenerateRootPath: ./DummyTwitterProfile

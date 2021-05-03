@@ -40,14 +40,14 @@ targets:
     # configFiles:
     #     Debug: configs/Debug.xcconfig
     #     Release: configs/Release.xcconfig
-    preBuildScripts:
-        - path: /bin/sh
-          name: Run Script(Swiftformat)
-          script: |
-            if which mint >/dev/null; then
-              git diff --name-only | grep .swift | while read filename; do
-                mint run swiftformat "$filename" --swiftversion 5
-              done
-            else
-              echo "warning: Mintがインストールされていません。こちらからダウンロードしてください https://github.com/yonaskolb/Mint"
-            fi
+    # preBuildScripts:
+    #     - path: /bin/sh
+    #       name: Run Script(Swiftformat)
+    #       script: |
+    #         if which mint >/dev/null; then
+    #           git diff --name-only | grep .swift | while read filename; do
+    #             mint run swiftformat "$filename" --swiftversion 5
+    #           done
+    #         else
+    #           echo "warning: Mintがインストールされていません。こちらからダウンロードしてください https://github.com/yonaskolb/Mint"
+    #         fi
